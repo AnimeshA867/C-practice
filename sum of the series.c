@@ -17,7 +17,7 @@ void main(){
 */
 
 // Program to calculate the sequence 1/1! + 2/2!+ n/n!;
-
+/* 
 #include <stdio.h>
 
 long fact(int n)
@@ -41,8 +41,32 @@ void main()
 
     for (int i = 1; i <= n; i++)
     {
-        sum += i/(fact(i));
+        sum += i / (fact(i));
     }
 
-    printf("The sum of the sequence is %ld",sum);
-}
+    printf("The sum of the sequence is %ld", sum);
+} */
+
+
+//Program to find X of the following series for the given value of a and N.
+//X= a- a^2/2 ...... a^n/n;
+
+/* #include<stdio.h>
+#include<math.h>
+void main(){
+    int a,n;
+    float sum;
+    printf("Enter the value of a:");
+    scanf("%d",&a);
+
+    printf("Enter the value of n:");
+    scanf("%d",&n);
+
+    for(int i=1;i<=n;i++){
+        sum+=(pow(a,i)/i);
+    }
+
+    printf("The sum of the series is: %.2f",sum);
+
+} */
+
